@@ -1,0 +1,60 @@
+CS349 ASSIGNMENT 3 MARKING SCHEME
+Marker : Mingyu
+
+GUIDELINES
+The assignment needs to compile and run in order for the TA to mark it. If it 
+doesn't compile, but the TA is able to get it working, you will only lose marks 
+for the "Compiles and runs" section. If they cannot get it to compile, you 
+receive zero for the assignment.
+--------------------------------------------------------------------------------------
+TOTAL: 
+86/100 
+
+MARKS
+[5/5%]   Compiles and runs
+    [/5]   'make run' compiles and runs; readme.txt exists with appropriate information
+
+[20/20%]  Animating the scene graph
+    [/10]   Nodes rotate about their parent
+    [/5]    Nodes maintain the same face towards their parent
+    [/5]    Moving the mouse on/off the window stops/starts the animation
+
+[30/30%]  Dragging nodes
+    [/10]   Dragging nodes follows the mouse accurately at all times
+    [/5]    Dragging a parent node also drags the children, without changing their 
+            relative positions 
+    [/10]   Dragging a child node maintains the same face towards its parent at all times
+    [/5]    Dragging a grandchild maintains the same face towards its parent at all times
+
+[/45%]  Other manipulations
+    [5/5]    Individual nodes can be scaled
+    [2/5]    Scaling interaction uses direct manipulation that is easy to discover and use
+            4' if slider is used
+            4' if menu is used
+            2' if keyboard is used 
+    [5/5]    Scaling does not affect other nodes
+
+    [5/5]    New child nodes can be added to any existing node
+    [2/5]    New node interaction uses direct manipulation that is easy to discover and use
+           2' if keyboard is used 
+
+    [5/5]    The shape of a node can be  changed
+    [1/5]    The change shape interaction uses direct manipulation that is easy to discover and use
+            1' if cycling is used
+
+    [5/5]    The colour of a node can be changed
+    [1/5]    The change colour interaction uses direct manipulation that is easy to discover and use
+            3' if only a limit number of colours (<8)
+            1' if cycling is used
+
+[0/10%]  Bonus Enhancement
+    [/10]   An enhancement that is consistent with the purposes of the assignment is implemented.
+            Marks awarded based on innovation and effort.
+            (Marked based on Innovation AND Effort)
+            7' high innovation low effort XOR low innovation high effort
+            3' low innovation low effort
+
+[0/10%]  Deduction
+    [/10]   Each node holds its scaling, rotation, and translation information in a single
+            AffineTranform instance variable.  It does not use extra matrices nor instance variables
+            for that purpose.
