@@ -1,4 +1,5 @@
 Moving cursor away causes shapes to rotate.
+To move shapes click and drag to the desired position.
 
 Press "LEFT"  to change the color of the last selected node.
 
